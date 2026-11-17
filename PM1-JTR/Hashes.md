@@ -1,4 +1,4 @@
-# Password Hash Inventory
+# PDF Hashes
 
 - **PDF-1:**
  `$pdf$4*4*128*-1028*1*16*ca7f72f11459cba469f1005a8765ed51*32*f32d8fa1bfbe2648226dffc39f7909ea0021446990b9e4114071a4d9104984c1*32*9322f50c
