@@ -1,4 +1,4 @@
-# PDF Hashes
+# PDF Hashes & Passwords
 
 - **PDF-1:**
   
