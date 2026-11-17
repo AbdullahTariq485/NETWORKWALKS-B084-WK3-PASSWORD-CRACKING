@@ -1,4 +1,5 @@
 # PDF Hashes & Passwords
+The following hashes were calculated from the respective PDFs, and their passwords were recovered using JTR (John the Ripper).
 
 - **PDF-1:**
   
