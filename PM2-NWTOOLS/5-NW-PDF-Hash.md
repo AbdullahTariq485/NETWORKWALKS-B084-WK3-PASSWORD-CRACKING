@@ -2,7 +2,7 @@
 
 The following hash was calculated from the respective PDF, and its password was recovered using NWTools like Hash-Calculator and Password-Cracker.
 
-- **NW-PDF-1:**
+- **NW-PDF:**
 
   **Hash:**
   `$pdf$4*4*128*-1060*1*16*55d1a5c14175da449753199e44971d32*32*777fd021a7f3c5ae598c0c6495c7f76e00000000000000000000000000000000*32*ceecdac74b19b5a62688d3b3524e1374c955cbb9cc3c45316494d9446ef81af1`
