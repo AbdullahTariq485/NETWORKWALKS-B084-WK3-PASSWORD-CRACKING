@@ -48,7 +48,7 @@ This lab uses both tools together, in a controlled training environment, to reco
 
 | Component | Detail |
 |---|---|
-| Host OS | Windows PC |
+| Host OS | Kali Linux |
 | Password-Auditing Tool | John the Ripper (JTR) |
 | GUI Front End | Johnny |
 | Target File | Password-protected PDF (`Multiple PDFs`) |
@@ -61,7 +61,7 @@ This lab uses both tools together, in a controlled training environment, to reco
 |---|---|
 | [John the Ripper](https://www.openwall.com/john/) | Core password-auditing engine |
 | [Johnny](https://openwall.info/wiki/john/johnny) | Graphical interface for John the Ripper |
-| Windows | Lab operating system |
+| Linux | Lab operating system |
 | [Online PDF Hash Extractor](https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php) | Extracts the password-hash representation of a protected PDF |
 | Dictionary wordlist | Candidate-password list used for the audit attack |
 
@@ -69,10 +69,10 @@ This lab uses both tools together, in a controlled training environment, to reco
 ## Practical Workflow
 
 **Step 1 — Download John the Ripper**
-Downloaded from the [official Openwall site](https://www.openwall.com/john/) (Windows build).
+Downloaded from the [official Openwall site](https://www.openwall.com/john/) (debian build).
 
 **Step 2 — Download and install Johnny**
-Downloaded [Johnny](https://openwall.info/wiki/john/johnny), ran the installer, then opened Johnny and used its Settings to browse to and select `john.exe` (located in JTR's `run` folder), linking the GUI to the JTR engine.
+Downloaded [Johnny](https://openwall.info/wiki/john/johnny), ran the installer linking the GUI to the JTR engine.
 
 **Step 3 — Prepare the target PDF and extract its hash**
 Downloaded the encrypted lab PDF to the Windows PC, then used the [online PDF hash extractor](https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php) to upload the file and generate its password-hash representation (format `$pdf$...`).
