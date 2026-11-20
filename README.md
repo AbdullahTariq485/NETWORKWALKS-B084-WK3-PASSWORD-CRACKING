@@ -53,7 +53,6 @@ This lab uses both tools together, in a controlled training environment, to reco
 | GUI Front End | Johnny |
 | Target File | Password-protected PDF (`Multiple PDFs`) |
 
-> The lab manual specifies a Windows environment for installing JTR and Johnny directly (as opposed to using JTR's Kali-preinstalled build), and the screenshots in this repository follow that Windows workflow.
 
 ## Tools & Technologies
 
