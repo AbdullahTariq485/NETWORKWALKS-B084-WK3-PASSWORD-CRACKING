@@ -5,7 +5,7 @@
 ![GUI](https://img.shields.io/badge/GUI-Johnny-6E56CF)
 ![Status](https://img.shields.io/badge/Status-Educational%20Lab-success)
 
-A hands-on password-auditing lab using **John the Ripper (JTR)** and its graphical front end **Johnny** to recover the password of a protected PDF on a Windows PC.
+A hands-on password-auditing lab using **John the Ripper (JTR)** and its graphical front end **Johnny** to recover the password of protected PDFs. Plus another module in this lab covers the same thing using networkwalks tools like hash-calculator and password-cracker.
 
 
 ---
@@ -51,7 +51,7 @@ This lab uses both tools together, in a controlled training environment, to reco
 | Host OS | Windows PC |
 | Password-Auditing Tool | John the Ripper (JTR) |
 | GUI Front End | Johnny |
-| Target File | Password-protected PDF (`My Locked PDF1.pdf`) |
+| Target File | Password-protected PDF (`Multiple PDFs`) |
 
 > The lab manual specifies a Windows environment for installing JTR and Johnny directly (as opposed to using JTR's Kali-preinstalled build), and the screenshots in this repository follow that Windows workflow.
 
@@ -78,10 +78,10 @@ Downloaded [Johnny](https://openwall.info/wiki/john/johnny), ran the installer, 
 Downloaded the encrypted lab PDF to the Windows PC, then used the [online PDF hash extractor](https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php) to upload the file and generate its password-hash representation (format `$pdf$...`).
 
 **Step 4 — Save the hash for Johnny**
-Copied the extracted hash into Notepad and saved it as `hash1.txt`, trimming any stray characters (e.g. a leading `b'`) so the file starts cleanly with `$pdf$`.
+Copied the extracted hash into Notepad and saved it as `hash1.txt or hash2.txt and so on...`, trimming any stray characters (e.g. a leading `b'`) so the file starts cleanly with `$pdf$`.
 
 **Step 5 — Load the hash and run the audit**
-In Johnny, used **Open password file** to load `hash1.txt`, then clicked **Start new attack** to begin the dictionary-based password audit.
+In Johnny, used **Open password file** to load `respective hash file`, then clicked **Start new attack** to begin the dictionary-based password audit.
 
 **Step 6 — Verify the result**
 Once JTR/Johnny recovered the password, reopened the original encrypted PDF and entered the recovered password to confirm it worked.
@@ -92,11 +92,12 @@ Evidences are placed in their respective directories. Just check them out...
 
 ## Result
 
-The password for `My Locked PDF1.pdf` was successfully recovered via John the Ripper, driven through Johnny's GUI, and verified by reopening the file. The following flags were captured from the recovered PDF content:
+The password for `respective pdf` was successfully recovered via John the Ripper, driven through Johnny's GUI, and verified by reopening the file. The following flags were captured from the recovered PDF content:
 
 ```text
 nw{networkwalks_flag1_jtr_270521_1}
 nw{networkwalks_persistence_jtr_270521}
+etc...
 ```
 
 ## Learning Outcomes
