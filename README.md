@@ -134,7 +134,7 @@ This project was carried out strictly for educational purposes, as part of an au
 ## Author
 
 **Abdullah Tariq**
-- Cybersecurity Professional
+ Cybersecurity Professional
 
 
 ## Disclaimer
